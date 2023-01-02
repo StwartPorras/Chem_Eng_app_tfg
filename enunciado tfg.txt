@@ -1,0 +1,73 @@
+Me gustaría que hiciésemos una aplicación que permita simular un reactor
+discontinuo o un mezcla completa isotermo para una reacción
+del ámbito de la biorrefinería.
+La aplicación permitiría calcular los costes del reactor, y,
+como añadido final, estimar los beneficios durante la operación y 
+optimizar la tasa de retorno de la inversión.
+En el módulo de simulación (una pestaña de la aplicación) 
+debe resolver simultáneamente el balance de materia y
+energía a un reactor no isotermo. 
+Opcionalmente, incluyendo el cálculo del intercambiador de calor.
+
+Lo debe hacer calculando X, concentraciones de compuestos,
+flujo producto deseado y rendimiento a producto para distintos volúmenes,
+concentraciones o flujos de entrada
+
+-También lo debe hacer calculando el volumen de reactor necesario
+ para obtener un flujo de producto deseado
+
+-debe presentar gráficamente cómo varían las variables dependientes
+ (X, C, F, Rend, V…) con las independientes (C, T,V…)
+
+-opcionalmente, deberíamos intentar que el usuario pueda cambiar 
+la cinética de la reacción definiéndola en el entorno gráfico 
+de la aplicación, y no entrando a reprogramar el módulo cinético.
+
+En el módulo de costes, debe calcular
+
+-los costes de construcción del reactor, intercambiador
+ y cualquier equipo adicional (destilador, caldera, etc), 
+ usando las fórmulas que os enseñan en Proyectos 
+ (los equipos auxiliares no se diseñan al detalle, 
+ se introduce simplemente la variable de diseño, 
+ como la potencia de la caldera, y la fórmula te da el coste de la misma)
+
+-los costes de operación,
+ incluyendo el de los reactivos,
+  la energía (desglosando el consumo de cada equipo), 
+  salarios, el pago del préstamo y otros gastos menores 
+  y opcionalmente, si os enseñan en Proyectos,
+   los del tratamiento de aguas, gases y residuos sólidos del procesos
+
+-los costes de financiación 
+(coste del préstamo para construir el reactor
+ y equipo auxiliar y poner todo en marcha,
+que depende del interés y el tiempo de retorno.
+En proyectos creo que también os lo enseñan,
+ y si no en la asignatura que tengáis de economía)
+
+-debe presentar gráficamente 
+cómo varían los costes con el volumen del reactor,
+ flujo de producto deseado, etc
+
+En el módulo de beneficios o rentabilidad, debe calcular
+
+-el beneficio esperado, que será función de los costes de operación 
+y el precio de venta del producto
+
+-el retorno de la inversión, que será función del beneficio y
+ la inversión hecha para construir la planta
+
+-la optimización del beneficio o del retorno de la inversión, 
+que se puede hacer en función del volumen del reactor,
+ flujo de producto o reactivo, tiempo de operación de planta…
+
+-debe representar gráficamente como varían beneficio y 
+retorno en función de variables como el volumen del reactor,
+ el tiempo de operación, etc
+
+La aplicación obviamente debe permitir guardar y exportar los resultados.
+
+https://www.frontiersin.org/articles/10.3389/fsufs.2020.00011/full
+https://jckantor.github.io/CBE30338/07.04-Simulation-of-an-Exothermic-CSTR.html
+https://dynamics-and-control.readthedocs.io/en/latest/1_Dynamics/2_Time_domain_simulation/Nonlinear%20CSTR.html
